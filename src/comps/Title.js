@@ -5,7 +5,7 @@ const Title = () => {
     <div className="ui header ">
       <h1>
         <div className="content">MyGallery</div> &nbsp;
-         <i className="images icon"></i>
+         <i className="images outline large icon"></i>
       </h1>
     
       <h2>Your Pictures</h2>

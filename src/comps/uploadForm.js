@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import ProgressBar from "./ProgressBar";
 const UploadForm = () => {
   
   const [file, setFile] = useState(null);
@@ -7,7 +7,7 @@ const UploadForm = () => {
   const types = ['image/png', 'image/jpeg']
 
   const onUpload = (event) => {
-    const selected =event.target.files[0];
+    const selected = event.target.files[0];
 
     if(selected&& types.includes(selected.type)){
       setFile(selected)
@@ -22,11 +22,19 @@ const UploadForm = () => {
   };
 
   return (
-    <div>
-      <form>
-        <input type="file" onChange={onUpload} />
+    <div className="ui ">
+      <form className="center aligned">
+        
+        <label className="  circular ui icon button">
+        <i className="icon upload"/><input type="file" onChange={onUpload}/></label>
+        
+        </form>
+        
+        
         <div className="error">{error}</div>
-      </form>
+        { file && <ProgressBar file={file} setFile={setFile} /> }
+        
+      
     </div>
   );
 };
