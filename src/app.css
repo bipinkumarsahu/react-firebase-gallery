@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@198&display=swap');
+:root{
+  --primary: #efb6b2;
+  --secondary: #4e4e4e;
+  --error: #ff4a4a;
+}
+
+/* base styles & title */
+.container .segment {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--secondary);
+}
+.App{
+  max-width: 960px;
+  margin: 0 auto;
+  height:max-content;
+}
+.header h1{
+  color: royalblue;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-weight:lighter;
+}
+.header h2, .header p{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.header h2{
+  margin-top: 60px;
+  font-size: 2.6rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* upload form styles */
+
+
+/* progress bar styles */
+
+
+/* image grid styles */
+
+
+/* modal styles */
